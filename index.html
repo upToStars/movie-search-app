@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Movie Search</h1>
+    <div class="api-config"><label for="apiKey">OMDb API key (needed to search):</label>
+    <input type="password" id="apiKey" placeholder="Enter your free OMDb API key" autocomplete="off">
+    <p>Get your own key at <a href="https://www.omdbapi.com/apikey.aspx" target="_blank" rel="noopener noreferrer">OMDb API</a>. The key stays in this browser tab and is not saved to GitHub.</p></div>
+    <form id="movieForm">
+<div class="form-control">
+    <input type="text" id="movieInput" placeholder="Unesite naziv filma">
+</div>
+<button type="submit" id="dugmePretrazi">Pretrazi</button>
+<button type="button" id="prikaziOmiljene">Prikazi omiljene</button>
+    </form>
+
+    <div id="prikazDetalja"></div>
+    <div id="omiljeniRezultat"></div>
+    <div id="rezultat"></div>
+    <div id="scrollTrigger"></div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
